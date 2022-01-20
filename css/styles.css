@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-family: 'VT323', monospace;
+}
+
+.title{
+    margin: 50px 0;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+}
+
+.top-bar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #444;
+    padding: 0 6px;
+}
+
+.buttons{
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+
+.minimize,
+.maximize,
+.close{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+
+.minimize { background: green;}
+.maximize { background: yellow;}
+.close { background: red;}
+
+
+.terminal{
+    width: 800px;
+    height: 600px;
+    background: #111;
+    color: #eee;
+    border: 2px solid #444;
+    box-shadow: 10px 10px 10px #3336;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.screen{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+    padding: 5px;
+    overflow-y: scroll;
+    word-break: break-all;
+}
+
+.prompt{
+    user-select: none;
+    display: inline;
+}
+
+.input{
+    display: inline;
+    width: 100%;
+    outline: 0;
+    margin-left: 1ch;
+    border: none;
+    overflow-wrap: break-word;
+}
+
+.result{
+    display: block;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.output{
+    white-space_:pre-line;
+}
+
