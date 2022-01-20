@@ -1,9 +1,9 @@
 # Emulación de Terminal de un SO
 ### Una terminal "operativa" creada con Javascript
 
-Html con divs para crear los distintos contenedores y secciones de la terminal
-Estilos con CSS.
-Javascript:
+- Html con divs para crear los distintos contenedores y secciones de la terminal
+- Estilos con CSS.
+- Javascript:
 - Click listener para dar focus al div editable
 - Keydown listener donde se comprueba si se presiona enter para leer el comando, backspace para eliminar el ultimo caracter digitado, 
 de lo contrario ir guardando la cadena de texto ingresada
